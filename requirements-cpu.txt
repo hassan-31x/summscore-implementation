@@ -1,0 +1,10 @@
+# For saved-feature evaluation and the authors' CPU coefficient search.
+# Version ranges allow the tested local stack; exact validation versions are recorded in results/verification.json.
+numpy>=1.24,<3
+scipy>=1.10,<2
+matplotlib>=3.7,<4
+nltk==3.9.1
+rouge-score==0.1.2
+scikit-learn>=1.2,<2
+torch>=2.2,<3
+tqdm>=4.65,<5

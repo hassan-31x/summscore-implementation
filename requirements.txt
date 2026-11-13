@@ -1,0 +1,9 @@
+# Full pipeline. Original pins are preserved in ORIGINAL_REQUIREMENTS.txt.
+# Python 3.10/3.11 is recommended for the original Transformers implementation.
+-r requirements-cpu.txt
+transformers==4.28.1
+tokenizers==0.13.3
+bert-score==0.3.13
+datasets>=3,<5
+sentencepiece>=0.1.99,<1
+openai==0.27.6

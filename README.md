@@ -4,6 +4,8 @@ Paper: Ravaut, Joty, and Chen, **Unsupervised Summarization Re-ranking**, Findin
 
 ## Install and verify the saved results
 
+Verification requires the local `summaries/`, `summary_scores/`, and `results/analysis_cache/` artifacts, which are excluded from Git. Download or copy those artifacts separately when using a fresh clone.
+
 From this directory, using Python 3.10 or later:
 
 ```bash

@@ -1,0 +1,60 @@
+# Python bytecode, environments, and tool caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Local editor and operating-system files
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Reference documents (already excluded from this repository)
+/docs/
+
+# Large generated inputs, feature caches, and downloaded models
+# Do not ignore *.pkl globally: src/*_permutations/*.pkl are required source data.
+/summaries/
+/summary_scores/
+/hf_models/
+/hf_cache/
+/.cache/
+/nltk_data/
+/text_sentences_scores/
+*.safetensors
+*.ckpt
+
+# Fresh runs, intermediate analysis, and verbose per-document exports
+# Keep results/{baseline,ablation,improvement}, tables, and figures as experiment evidence.
+/new_runs/
+/outputs/
+/results/analysis_cache/
+/results/verified_selections/
+*.log
+
+# Local submission bundles and generated checksum manifests
+*.zip
+*.tar
+*.tar.gz
+/MANIFEST.sha256

@@ -1,0 +1,10 @@
+{
+ "rouge_1": 0.085,
+ "rouge_2": 0.68,
+ "bleu": 0.085,
+ "bert_score": 0.03125,
+ "bart_score": 0.011250000000000001,
+ "bleurt": 0.0075,
+ "diversity": 0.05,
+ "length": 0.05
+}

@@ -1,0 +1,534 @@
+{
+  "python": "3.13.7",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "nltk": "3.9.1",
+    "rouge-score": "0.1.2",
+    "torch": "2.9.0",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0"
+  },
+  "runs": [
+    {
+      "dataset": "samsum",
+      "part": "ablation",
+      "run": "lead3_no_semantic",
+      "n": 819,
+      "ROUGE": [
+        27.99172808677176,
+        7.247393594702138,
+        24.24846575125502
+      ],
+      "gain_pct": 6.982466573554377,
+      "status": "PASS",
+      "authors_sort_different_indices": 153,
+      "authors_sort_ROUGE": [
+        28.050931406822663,
+        7.2668034501775685,
+        24.30875356630514
+      ],
+      "authors_sort_gain_pct": 7.232266090103637
+    },
+    {
+      "dataset": "samsum",
+      "part": "baseline",
+      "run": "lead3",
+      "n": 819,
+      "ROUGE": [
+        28.048408464570517,
+        7.17407681672817,
+        24.35413615931232
+      ],
+      "gain_pct": 7.1425853173667,
+      "status": "PASS",
+      "authors_sort_different_indices": 16,
+      "authors_sort_ROUGE": [
+        28.048408464570514,
+        7.174076816728174,
+        24.35413615931233
+      ],
+      "authors_sort_gain_pct": 7.1425853173667
+    },
+    {
+      "dataset": "samsum",
+      "part": "baseline",
+      "run": "random3",
+      "n": 819,
+      "ROUGE": [
+        28.157666146092687,
+        7.240354760612206,
+        24.304865807574615
+      ],
+      "gain_pct": 7.3696607628942,
+      "status": "PASS",
+      "authors_sort_different_indices": 12,
+      "authors_sort_ROUGE": [
+        28.15766614609265,
+        7.240354760612204,
+        24.304865807574615
+      ],
+      "authors_sort_gain_pct": 7.369660762894181
+    },
+    {
+      "dataset": "samsum",
+      "part": "baseline",
+      "run": "salient_r1",
+      "n": 819,
+      "ROUGE": [
+        27.997742648878507,
+        7.145571945753992,
+        24.149539181895534
+      ],
+      "gain_pct": 6.632257601156319,
+      "status": "PASS",
+      "authors_sort_different_indices": 114,
+      "authors_sort_ROUGE": [
+        27.948902600038444,
+        7.104871905053954,
+        24.100699133055496
+      ],
+      "authors_sort_gain_pct": 6.3833947851034765
+    },
+    {
+      "dataset": "samsum",
+      "part": "baseline",
+      "run": "salient_r2",
+      "n": 819,
+      "ROUGE": [
+        27.916627638087316,
+        7.130907523429052,
+        24.18767803010108
+      ],
+      "gain_pct": 6.528596783587406,
+      "status": "PASS",
+      "authors_sort_different_indices": 12,
+      "authors_sort_ROUGE": [
+        27.916627638087302,
+        7.130907523429052,
+        24.187678030101086
+      ],
+      "authors_sort_gain_pct": 6.528596783587406
+    },
+    {
+      "dataset": "samsum",
+      "part": "baseline",
+      "run": "salient_rL",
+      "n": 819,
+      "ROUGE": [
+        27.997742648878507,
+        7.145571945753992,
+        24.149539181895534
+      ],
+      "gain_pct": 6.632257601156319,
+      "status": "PASS",
+      "authors_sort_different_indices": 114,
+      "authors_sort_ROUGE": [
+        27.948902600038444,
+        7.104871905053954,
+        24.100699133055496
+      ],
+      "authors_sort_gain_pct": 6.3833947851034765
+    },
+    {
+      "dataset": "samsum",
+      "part": "improvement",
+      "run": "lead3_fluency",
+      "n": 819,
+      "ROUGE": [
+        28.190606087198514,
+        7.302206168967537,
+        24.467495135841254
+      ],
+      "gain_pct": 7.83260606356717,
+      "status": "PASS",
+      "authors_sort_different_indices": 16,
+      "authors_sort_ROUGE": [
+        28.190606087198507,
+        7.302206168967543,
+        24.46749513584126
+      ],
+      "authors_sort_gain_pct": 7.832606063567189
+    },
+    {
+      "dataset": "samsum",
+      "part": "improvement",
+      "run": "reference",
+      "n": 819,
+      "ROUGE": [
+        28.036165357377737,
+        7.252096304236252,
+        24.26645774901398
+      ],
+      "gain_pct": 7.103196710572007,
+      "status": "PASS",
+      "authors_sort_different_indices": 18,
+      "authors_sort_ROUGE": [
+        28.0361653573777,
+        7.25209630423625,
+        24.266457749013973
+      ],
+      "authors_sort_gain_pct": 7.103196710572007
+    },
+    {
+      "dataset": "cnndm",
+      "part": "ablation",
+      "run": "lead3_no_semantic",
+      "n": 500,
+      "ROUGE": [
+        35.37109172693805,
+        13.784595581465059,
+        31.852289080910275
+      ],
+      "gain_pct": -0.4277678436221519,
+      "status": "PASS",
+      "authors_sort_different_indices": 33,
+      "authors_sort_ROUGE": [
+        35.38159026066238,
+        13.782421668421582,
+        31.86545030713342
+      ],
+      "authors_sort_gain_pct": -0.4013581759405904
+    },
+    {
+      "dataset": "cnndm",
+      "part": "baseline",
+      "run": "lead3",
+      "n": 500,
+      "ROUGE": [
+        37.64840482887711,
+        15.472635751983194,
+        33.79363930804388
+      ],
+      "gain_pct": 6.832549946734771,
+      "status": "PASS",
+      "authors_sort_different_indices": 11,
+      "authors_sort_ROUGE": [
+        37.64840482887711,
+        15.472635751983201,
+        33.79363930804394
+      ],
+      "authors_sort_gain_pct": 6.832549946734771
+    },
+    {
+      "dataset": "cnndm",
+      "part": "baseline",
+      "run": "random3",
+      "n": 500,
+      "ROUGE": [
+        35.48660638225685,
+        13.5507036111792,
+        31.803599668860347
+      ],
+      "gain_pct": -0.6331205467707208,
+      "status": "PASS",
+      "authors_sort_different_indices": 30,
+      "authors_sort_ROUGE": [
+        35.48730054313885,
+        13.550703611179207,
+        31.804293829742363
+      ],
+      "authors_sort_gain_pct": -0.6314140691724321
+    },
+    {
+      "dataset": "cnndm",
+      "part": "baseline",
+      "run": "salient_r1",
+      "n": 500,
+      "ROUGE": [
+        35.91029779435599,
+        14.18911230647014,
+        32.31025877370872
+      ],
+      "gain_pct": 1.2951445876126397,
+      "status": "PASS",
+      "authors_sort_different_indices": 11,
+      "authors_sort_ROUGE": [
+        35.91029779435598,
+        14.189112306470147,
+        32.31025877370876
+      ],
+      "authors_sort_gain_pct": 1.2951445876126397
+    },
+    {
+      "dataset": "cnndm",
+      "part": "baseline",
+      "run": "salient_r2",
+      "n": 500,
+      "ROUGE": [
+        36.03347809064921,
+        14.3062174967479,
+        32.41802380959713
+      ],
+      "gain_pct": 1.7229563781198243,
+      "status": "PASS",
+      "authors_sort_different_indices": 11,
+      "authors_sort_ROUGE": [
+        36.033478090649204,
+        14.3062174967479,
+        32.41802380959716
+      ],
+      "authors_sort_gain_pct": 1.7229563781198243
+    },
+    {
+      "dataset": "cnndm",
+      "part": "baseline",
+      "run": "salient_rL",
+      "n": 500,
+      "ROUGE": [
+        35.83998662582309,
+        14.104373562921406,
+        32.245310940424744
+      ],
+      "gain_pct": 1.0247308882239654,
+      "status": "PASS",
+      "authors_sort_different_indices": 10,
+      "authors_sort_ROUGE": [
+        35.83998662582309,
+        14.104373562921408,
+        32.245310940424794
+      ],
+      "authors_sort_gain_pct": 1.0247308882239654
+    },
+    {
+      "dataset": "cnndm",
+      "part": "improvement",
+      "run": "lead3_fluency",
+      "n": 500,
+      "ROUGE": [
+        37.40957208232107,
+        15.135633457796438,
+        33.52336060425272
+      ],
+      "gain_pct": 5.792535889396214,
+      "status": "PASS",
+      "authors_sort_different_indices": 6,
+      "authors_sort_ROUGE": [
+        37.40957208232109,
+        15.135633457796438,
+        33.52336060425279
+      ],
+      "authors_sort_gain_pct": 5.792535889396214
+    },
+    {
+      "dataset": "cnndm",
+      "part": "improvement",
+      "run": "reference",
+      "n": 500,
+      "ROUGE": [
+        37.20672410338276,
+        15.101864928395388,
+        33.36341479240967
+      ],
+      "gain_pct": 5.305095057398265,
+      "status": "PASS",
+      "authors_sort_different_indices": 9,
+      "authors_sort_ROUGE": [
+        37.206724103382776,
+        15.101864928395392,
+        33.36341479240973
+      ],
+      "authors_sort_gain_pct": 5.30509505739828
+    },
+    {
+      "dataset": "xsum",
+      "part": "ablation",
+      "run": "lead3_no_semantic",
+      "n": 500,
+      "ROUGE": [
+        19.44516449956459,
+        2.8636304112787094,
+        14.607675624859155
+      ],
+      "gain_pct": 0.4315656176355442,
+      "status": "PASS",
+      "authors_sort_different_indices": 57,
+      "authors_sort_ROUGE": [
+        19.420124865181634,
+        2.8688935691734474,
+        14.585455253018264
+      ],
+      "authors_sort_gain_pct": 0.3173128419098137
+    },
+    {
+      "dataset": "xsum",
+      "part": "baseline",
+      "run": "lead3",
+      "n": 500,
+      "ROUGE": [
+        19.865715021281165,
+        3.007274581847078,
+        14.804809215954993
+      ],
+      "gain_pct": 2.502765554665597,
+      "status": "PASS",
+      "authors_sort_different_indices": 3,
+      "authors_sort_ROUGE": [
+        19.86571502128118,
+        3.0072745818470783,
+        14.804809215954986
+      ],
+      "authors_sort_gain_pct": 2.502765554665597
+    },
+    {
+      "dataset": "xsum",
+      "part": "baseline",
+      "run": "random3",
+      "n": 500,
+      "ROUGE": [
+        19.97759455331875,
+        3.0967271777226935,
+        14.952903257360962
+      ],
+      "gain_pct": 3.4533823591230606,
+      "status": "PASS",
+      "authors_sort_different_indices": 2,
+      "authors_sort_ROUGE": [
+        19.977594553318756,
+        3.0967271777226966,
+        14.952903257360948
+      ],
+      "authors_sort_gain_pct": 3.453382359123046
+    },
+    {
+      "dataset": "xsum",
+      "part": "baseline",
+      "run": "salient_r1",
+      "n": 500,
+      "ROUGE": [
+        19.412548824615932,
+        2.950833232651369,
+        14.574883262519045
+      ],
+      "gain_pct": 0.4908585092928444,
+      "status": "PASS",
+      "authors_sort_different_indices": 2,
+      "authors_sort_ROUGE": [
+        19.412548824615936,
+        2.9508332326513695,
+        14.574883262519023
+      ],
+      "authors_sort_gain_pct": 0.4908585092928444
+    },
+    {
+      "dataset": "xsum",
+      "part": "baseline",
+      "run": "salient_r2",
+      "n": 500,
+      "ROUGE": [
+        19.404169626319497,
+        2.985676602292603,
+        14.555792470020418
+      ],
+      "gain_pct": 0.5109178478663473,
+      "status": "PASS",
+      "authors_sort_different_indices": 1,
+      "authors_sort_ROUGE": [
+        19.404169626319486,
+        2.9856766022926036,
+        14.555792470020405
+      ],
+      "authors_sort_gain_pct": 0.5109178478663473
+    },
+    {
+      "dataset": "xsum",
+      "part": "baseline",
+      "run": "salient_rL",
+      "n": 500,
+      "ROUGE": [
+        19.643440899497385,
+        3.063381254163373,
+        14.625458167497946
+      ],
+      "gain_pct": 1.562779602789357,
+      "status": "PASS",
+      "authors_sort_different_indices": 26,
+      "authors_sort_ROUGE": [
+        19.640128568264238,
+        3.0558340843520537,
+        14.62214583626482
+      ],
+      "authors_sort_gain_pct": 1.524225015022633
+    },
+    {
+      "dataset": "xsum",
+      "part": "improvement",
+      "run": "lead3_fluency",
+      "n": 500,
+      "ROUGE": [
+        19.861154765847214,
+        2.992597223593003,
+        14.733787361367066
+      ],
+      "gain_pct": 2.2572139193324667,
+      "status": "PASS",
+      "authors_sort_different_indices": 3,
+      "authors_sort_ROUGE": [
+        19.86115476584723,
+        2.992597223593005,
+        14.733787361367051
+      ],
+      "authors_sort_gain_pct": 2.2572139193324667
+    },
+    {
+      "dataset": "xsum",
+      "part": "improvement",
+      "run": "reference",
+      "n": 500,
+      "ROUGE": [
+        20.15549739890457,
+        3.1230359197712443,
+        15.014445393532693
+      ],
+      "gain_pct": 4.176367578545698,
+      "status": "PASS",
+      "authors_sort_different_indices": 2,
+      "authors_sort_ROUGE": [
+        20.155497398904586,
+        3.123035919771246,
+        15.014445393532691
+      ],
+      "authors_sort_gain_pct": 4.176367578545698
+    }
+  ],
+  "features": {
+    "samsum": {
+      "diversity": {
+        "checked_candidates": 2000,
+        "mismatches": [],
+        "max_abs_difference": 0.0
+      },
+      "length": {
+        "checked_candidates": 2000,
+        "mismatches": [],
+        "max_abs_difference": 0.0
+      }
+    },
+    "cnndm": {
+      "diversity": {
+        "checked_candidates": 2000,
+        "mismatches": [],
+        "max_abs_difference": 0.0
+      },
+      "length": {
+        "checked_candidates": 2000,
+        "mismatches": [],
+        "max_abs_difference": 0.0
+      }
+    },
+    "xsum": {
+      "diversity": {
+        "checked_candidates": 2000,
+        "mismatches": [],
+        "max_abs_difference": 0.0
+      },
+      "length": {
+        "checked_candidates": 2000,
+        "mismatches": [],
+        "max_abs_difference": 0.0
+      }
+    }
+  },
+  "historical_json_unchanged": true,
+  "note": "Neural features and BERTScore evaluation were read from historical outputs, not recomputed. Historical first-argmax tie resolution is replayed separately; the authors' unchanged reverse-argsort can choose another tied candidate. Both outcomes are recorded for every run."
+}

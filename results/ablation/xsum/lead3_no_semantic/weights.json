@@ -1,0 +1,7 @@
+{
+ "rouge_1": 0.625,
+ "rouge_2": 0.0,
+ "bleu": 0.0,
+ "diversity": 0.325,
+ "length": 0.05
+}
